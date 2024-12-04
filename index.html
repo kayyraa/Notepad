@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script type="module" src="./scripts/api.js"></script>
+        <script type="module" src="./scripts/file.js"></script>
+
+        <link rel="stylesheet" href="./scripts/style/format.css">
+        <link rel="stylesheet" href="./scripts/style/style.css">
+
+        <link rel="shortcut icon" href="./images/favicon.svg" type="image/svg+xml">
+
+        <title>Notepad</title>
+    </head>
+    <body>
+        <topbar>
+            <img draggable="false" src="./images/favicon.svg">
+            <header>Notepad</header>
+        </topbar>
+        <div class="Tabs">
+            <div type="md" href="Tutorial">
+                <img class="FileIcon" src="./images/files/md.svg" alt="MD">
+                <header>Tutorial.md</header>
+                <img class="CloseButton" src="./images/CloseButton.svg">
+            </div>
+            <div type="js" href="JS">
+                <img class="FileIcon" src="./images/files/js.svg" alt="JS">
+                <header>Main.js</header>
+                <img class="CloseButton" src="./images/CloseButton.svg">
+            </div>
+        </div>
+        <content>
+            <div id="Tutorial">
+                <div><textarea>Welcome</textarea><textarea>to</textarea><textarea>Notepad!</textarea><textarea>This</textarea><textarea>is</textarea><textarea>a</textarea><textarea>simple</textarea><textarea>notepad</textarea><textarea>application</textarea><textarea>that</textarea><textarea>allows</textarea><textarea>you</textarea><textarea>to</textarea><textarea>create,</textarea><textarea>edit,</textarea><textarea>and</textarea><textarea>save</textarea><textarea>text</textarea><textarea>files.</textarea><textarea>To</textarea><textarea>get</textarea><textarea>started,</textarea><textarea>click</textarea><textarea>on</textarea><textarea>the</textarea><textarea>"New"</textarea><textarea>tab</textarea><textarea>and</textarea><textarea>enter</textarea><textarea>your</textarea><textarea>desired</textarea><textarea>file</textarea><textarea>name.</textarea><textarea>Then,</textarea><textarea>use</textarea><textarea>the</textarea><textarea>toolbar</textarea><textarea>buttons</textarea><textarea>to</textarea><textarea>write,</textarea><textarea>format,</textarea><textarea>and</textarea><textarea>save</textarea><textarea>your</textarea><textarea>notes.</textarea>
+                </div>
+            </div>
+        </content>
+    </body>
+</html>

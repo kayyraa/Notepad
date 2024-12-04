@@ -1,0 +1,109 @@
+.Tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    position: absolute;
+    left: 0;
+    top: 4vh;
+
+    background-color: rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    border-top: 2px solid rgba(255, 255, 255, 0.125);
+
+    backdrop-filter: blur(2px);
+
+    width: 100%;
+    height: 4vh;
+}
+
+.Tabs > div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 6vw;
+    height: 100%;
+    text-align: center;
+
+    padding-left: 1vw;
+    
+    background-color: rgba(0, 0, 0, 0.25);
+    border-bottom: 2px solid transparent;
+
+    transition: all 0.25s ease;
+
+    cursor: pointer;
+}
+
+.Tabs > div img.CloseButton {
+    margin-left: 0.5vw;
+
+    height: 1.75vh;
+    aspect-ratio: 1 / 1;
+
+    padding: 0.5vh;
+
+    visibility: hidden;
+}
+
+.Tabs > div img.CloseButton:hover {
+    background-color: rgba(255, 255, 255, 0.125);
+}
+
+.Tabs > div:hover {
+    background-color: transparent;
+    border-color: #207dff;
+}
+
+.Tabs > div:hover img.CloseButton {
+    visibility: visible;
+}
+
+.Tabs > div > img:not(.FileIcon) {
+    height: 2.5vh;
+    aspect-ratio: 1 / 1;
+    margin-right: 0.5vw;
+
+    border-radius: 3px;
+}
+
+.Tabs > div > img:is(.FileIcon) {
+    height: 2.5vh;
+    aspect-ratio: 1 / 1;
+    margin-right: 0.5vw;
+}
+
+content {
+    position: absolute;
+
+    width: 100%;
+    height: 92vh;
+
+    left: 0;
+    top: 8vh;
+
+    transition: opacity 0.25s ease;
+}
+
+content > div {
+    display: none;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+
+    margin-top: 2vh;
+    margin-left: 1vw;
+
+    height: 100%;
+    width: 100%;
+}
+
+content > div textarea {
+    background: none;
+    border: none;
+    resize: none;
+    color: white;
+}
